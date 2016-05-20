@@ -8,8 +8,33 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.*;
 
 public class TestGoogleSearch {
+    
+    public class AppTest 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public AppTest( String testName )
+    {
+        super( testName );
+    }
 
-    public static void main(String[] args) {
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( AppTest.class );
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
 
 
     	        WebDriver driver=new FirefoxDriver();
@@ -43,9 +68,13 @@ public class TestGoogleSearch {
                 currentURL = driver.getCurrentUrl();
                 System.out.println("The current URL has changed to: " + currentURL);
                 
-    	        /*
     	        String str2 = driver.getCurrentUrl();
     	        System.out.println("The current URL has changed to: " + str2);
-    	        */
-    	   }
+    
+            assertTrue( false );
+    }
+}
+
+    
+	       }
 }
