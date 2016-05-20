@@ -7,10 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.*;
 
-public class TestGoogleSearch {
-    
-    public class AppTest 
-    extends TestCase
+
+    public class TestGoogleSearch  extends TestCase
 {
     /**
      * Create the test case
@@ -75,6 +73,4 @@ public class TestGoogleSearch {
     }
 }
 
-    
-	       }
 
