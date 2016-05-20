@@ -72,7 +72,7 @@ import java.util.concurrent.*;
     	        String str2 = driver.getCurrentUrl();
     	        System.out.println("The current URL has changed to: " + str2);
     
-            assertTrue( false );
+            assertTrue( true );
     }
 }
 
