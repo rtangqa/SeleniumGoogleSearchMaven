@@ -19,7 +19,7 @@ public class TestGoogleSearch {
     	        driver.manage().window().maximize();
 
     	        //Get the current page URL and store the value in variable 'str'
-    	        String str = driver.getCurrentUrl();
+    	        Final String str = driver.getCurrentUrl();
 
     	        //Print the value of variable in the console
     	        System.out.println("The current URL is " + str);
